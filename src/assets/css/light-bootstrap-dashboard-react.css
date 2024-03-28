@@ -125,7 +125,8 @@ h1 .subtitle {
 body,
 .wrapper {
   min-height: 100vh;
-  position: relative; }
+  position: relative; 
+  background-color: #000;}
 
 a {
   color: #1DC7EA; }
