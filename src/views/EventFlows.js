@@ -12,114 +12,99 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
+import Icons from "./Icons";
 
-function TableList() {
+function EventFlows() {
   return (
     <>
       <Container fluid>
         <Row>
           <Col md="12">
-            <Card className="strpied-tabled-with-hover">
+            <Card className="card-plain table-plain-bg">
               <Card.Header>
-                <Card.Title as="h4">List of all the alerts</Card.Title>
+                <Card.Title as="h4">Predefined Event FLows</Card.Title>
                 {/* <p className="card-category">
                   Here is a subtitle for this table
                 </p> */}
               </Card.Header>
               <Card.Body className="table-full-width table-responsive px-0">
-                <Table className="table-hover table-striped">
+                <Table className="table-hover">
                   <thead>
                     <tr>
-                      <th className="border-0">ID</th>
-                      <th className="border-0">Alert Name</th>
                       <th className="border-0">Event Source</th>
                       <th className="border-0">Trigger Condition</th>
                       <th className="border-0">Type</th>
                       <th className="border-0">Stakeholders</th>
+                      <th className="border-0">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>1</td>
-                      <td>Network Outage</td>
-                      <td>Network Devices (Routers)</td>
+                      <td>Network Devices (Routers) </td>
                       <td>
                         Detect network outage events and trigger an alert.
                       </td>
                       <td>Email</td>
-                      <td>
-                        Network Administrators (to troubleshoot and resolve
-                        network issues)
-                      </td>
+                      <td>Network Administrators</td>
+                      <td>Use Amazon SES to send an email.</td>
                     </tr>
                     <tr>
-                      <td>2</td>
-                      <td>Network Outage</td>
-                      <td>Network Devices (Routers)</td>
+                      <td>Network Devices (Routers) </td>
                       <td>
                         Detect network outage events and trigger an alert.
                       </td>
                       <td>Email</td>
-                      <td>
-                        Network Administrators (to troubleshoot and resolve
-                        network issues)
-                      </td>
+                      <td>Network Administrators</td>
+                      <td>Use Amazon SES to send an email.</td>
                     </tr>
                     <tr>
-                      <td>3</td>
-                      <td>Network Outage</td>
-                      <td>Network Devices (Routers)</td>
+                      <td>Network Devices (Routers) </td>
                       <td>
                         Detect network outage events and trigger an alert.
                       </td>
                       <td>Email</td>
-                      <td>
-                        Network Administrators (to troubleshoot and resolve
-                        network issues)
-                      </td>
+                      <td>Network Administrators</td>
+                      <td>Use Amazon SES to send an email.</td>
                     </tr>
                     <tr>
-                      <td>4</td>
-                      <td>Network Outage</td>
-                      <td>Network Devices (Routers)</td>
+                      <td>Network Devices (Routers) </td>
                       <td>
                         Detect network outage events and trigger an alert.
                       </td>
                       <td>Email</td>
-                      <td>
-                        Network Administrators (to troubleshoot and resolve
-                        network issues)
-                      </td>
+                      <td>Network Administrators</td>
+                      <td>Use Amazon SES to send an email.</td>
                     </tr>
                     <tr>
-                      <td>5</td>
-                      <td>Network Outage</td>
-                      <td>Network Devices (Routers)</td>
+                      <td>Network Devices (Routers) </td>
                       <td>
                         Detect network outage events and trigger an alert.
                       </td>
                       <td>Email</td>
-                      <td>
-                        Network Administrators (to troubleshoot and resolve
-                        network issues)
-                      </td>
+                      <td>Network Administrators</td>
+                      <td>Use Amazon SES to send an email.</td>
                     </tr>
                     <tr>
-                      <td>6</td>
-                      <td>Network Outage</td>
-                      <td>Network Devices (Routers)</td>
+                      <td>Network Devices (Routers) </td>
                       <td>
                         Detect network outage events and trigger an alert.
                       </td>
                       <td>Email</td>
-                      <td>
-                        Network Administrators (to troubleshoot and resolve
-                        network issues)
-                      </td>
+                      <td>Network Administrators</td>
+                      <td>Use Amazon SES to send an email.</td>
                     </tr>
                   </tbody>
                 </Table>
               </Card.Body>
+              <Button
+                className="btn-fill pull-right"
+                type="submit"
+                variant="info"
+                backgroundcolor="black"
+                mb="5"
+              >
+                Add a New Event Flow
+              </Button>
             </Card>
           </Col>
           {/* <Col md="12">
@@ -195,4 +180,4 @@ function TableList() {
   );
 }
 
-export default TableList;
+export default EventFlows;

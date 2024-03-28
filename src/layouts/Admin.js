@@ -25,11 +25,11 @@ import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 import routes from "routes.js";
 
-import sidebarImage from "assets/img/sidebar-3.jpg";
+import sidebarImage from "assets/img/RadientGreen.png";
 
 function Admin() {
   const [image, setImage] = React.useState(sidebarImage);
-  const [color, setColor] = React.useState("black");
+  const [color, setColor] = React.useState("white");
   const [hasImage, setHasImage] = React.useState(true);
   const location = useLocation();
   const mainPanel = React.useRef(null);
@@ -70,7 +70,7 @@ function Admin() {
           <div className="content">
             <Switch>{getRoutes(routes)}</Switch>
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
       <FixedPlugin
