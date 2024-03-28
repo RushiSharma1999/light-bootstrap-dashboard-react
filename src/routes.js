@@ -25,6 +25,7 @@ import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
 import CreateAlert from "views/CreateAlert";
 import EventFlows from "views/EventFlows";
+import Settings from "views/Settings";
 
 const dashboardRoutes = [
   {
@@ -63,33 +64,33 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/table",
+    path: "/settings",
     name: "Settings",
     icon: "nc-icon nc-settings-gear-64",
-    component: TableList,
+    component: Settings,
     layout: "/admin",
   },
-  {
-    path: "/table",
-    name: "Sign Out",
-    icon: "nc-icon nc-simple-remove",
-    component: TableList,
-    layout: "/admin",
-  },
-  {
-    path: "/typography",
-    name: "Typography",
-    icon: "nc-icon nc-paper-2",
-    component: Typography,
-    layout: "/admin",
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-atom",
-    component: Icons,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/table",
+  //   name: "Sign Out",
+  //   icon: "nc-icon nc-simple-remove",
+  //   component: TableList,
+  //   layout: "/admin",
+  // },
+  // {
+  //   path: "/typography",
+  //   name: "Typography",
+  //   icon: "nc-icon nc-paper-2",
+  //   component: Typography,
+  //   layout: "/admin",
+  // },
+  // {
+  //   path: "/icons",
+  //   name: "Icons",
+  //   icon: "nc-icon nc-atom",
+  //   component: Icons,
+  //   layout: "/admin",
+  // },
   // {
   //   path: "/maps",
   //   name: "Maps",

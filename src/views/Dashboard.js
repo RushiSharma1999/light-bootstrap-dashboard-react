@@ -32,8 +32,8 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Number</p>
-                      <Card.Title as="h4">150GB</Card.Title>
+                      <p className="card-category">Total Alerts Generated</p>
+                      <Card.Title as="h4">150K</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -58,8 +58,8 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Revenue</p>
-                      <Card.Title as="h4">$ 1,345</Card.Title>
+                      <p className="card-category">CPUs Alerted</p>
+                      <Card.Title as="h4">1,345</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -84,7 +84,7 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Errors</p>
+                      <p className="card-category">Network Outages</p>
                       <Card.Title as="h4">23</Card.Title>
                     </div>
                   </Col>
@@ -110,7 +110,7 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Followers</p>
+                      <p className="card-category">Yelp Push Alerts</p>
                       <Card.Title as="h4">+45K</Card.Title>
                     </div>
                   </Col>
@@ -130,7 +130,7 @@ function Dashboard() {
           <Col md="8">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Users Behavior</Card.Title>
+                <Card.Title as="h4">Notifications Service Usage</Card.Title>
                 <p className="card-category">24 Hours performance</p>
               </Card.Header>
               <Card.Body>
@@ -148,9 +148,9 @@ function Dashboard() {
                         "6:00AM",
                       ],
                       series: [
-                        [287, 385, 490, 492, 554, 586, 698, 695],
-                        [67, 152, 143, 240, 287, 335, 435, 437],
-                        [23, 113, 67, 108, 190, 239, 307, 308],
+                        [287, 385, 490, 600, 554, 450, 350, 250],
+                        [67, 152, 220, 490, 350, 235, 170, 55],
+                        [187, 275, 390, 520, 460, 350, 270, 170],
                       ],
                     }}
                     type="Line"
@@ -188,9 +188,9 @@ function Dashboard() {
               <Card.Footer>
                 <div className="legend">
                   <i className="fas fa-circle text-info"></i>
-                  Open <i className="fas fa-circle text-danger"></i>
-                  Click <i className="fas fa-circle text-warning"></i>
-                  Click Second Time
+                  Email <i className="fas fa-circle text-danger"></i>
+                  Push <i className="fas fa-circle text-warning"></i>
+                  Text SMS
                 </div>
                 <hr></hr>
                 <div className="stats">
@@ -203,8 +203,8 @@ function Dashboard() {
           <Col md="4">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Email Statistics</Card.Title>
-                <p className="card-category">Last Campaign Performance</p>
+                <Card.Title as="h4">Notification Statistics</Card.Title>
+                <p className="card-category">Last Year's Data</p>
               </Card.Header>
               <Card.Body>
                 <div
@@ -221,20 +221,20 @@ function Dashboard() {
                 </div>
                 <div className="legend">
                   <i className="fas fa-circle text-info"></i>
-                  Open <i className="fas fa-circle text-danger"></i>
-                  Bounce <i className="fas fa-circle text-warning"></i>
-                  Unsubscribe
+                  Email <i className="fas fa-circle text-danger"></i>
+                  Push <i className="fas fa-circle text-warning"></i>
+                  Text SMS
                 </div>
                 <hr></hr>
                 <div className="stats">
                   <i className="far fa-clock"></i>
-                  Campaign sent 2 days ago
+                  Data retrieved 2 minutes ago
                 </div>
               </Card.Body>
             </Card>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col md="6">
             <Card>
               <Card.Header>
@@ -261,31 +261,11 @@ function Dashboard() {
                       ],
                       series: [
                         [
-                          542,
-                          443,
-                          320,
-                          780,
-                          553,
-                          453,
-                          326,
-                          434,
-                          568,
-                          610,
-                          756,
+                          542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756,
                           895,
                         ],
                         [
-                          412,
-                          243,
-                          280,
-                          580,
-                          453,
-                          353,
-                          300,
-                          364,
-                          368,
-                          410,
-                          636,
+                          412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636,
                           695,
                         ],
                       ],
@@ -631,7 +611,7 @@ function Dashboard() {
               </Card.Footer>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </>
   );
